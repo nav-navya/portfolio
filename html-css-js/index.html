@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- <link rel="stylesheet" href="./style.css"> -->
+  <link href="style.css" rel="stylesheet">
+
+  <!-- font from google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap"
+    rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&family=Whisper&display=swap" rel="stylesheet">
+
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+<script src="index.js"></script>
+
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "SCBwHJb6pqJD_flBC",
+      });
+   })();
+</script>
+
+
+
+</head>
+
+<body class="font-[poppins] bg-slate-600 text-white ">
+
+
+  <!-- <button type="button" class="bg-gradient-to-r from-teal-400 to-blue-500 hover:from-pink-500 hover:to-orange-500 ...">
+    Hover me
+  </button> -->
+
+  <div class="min-h-screen px-[50px]">
+
+
+    <header class="w-full h-[100px] bg-transparent flex justify-around items-center fixed top-0 left-0 right-0 z-40">
+      <div class="ml-6 text-4xl bg-black ">NAVYA
+
+      </div>
+      <div class=" w-[700px] ">
+        <ul class="hidden  sm:flex justify-around">
+          <li>
+            <a class="hover:text-red-600 active:underline" href="#home">HOME</a>
+          </li>
+          <li>
+            <a class="hover:text-red-600 active:underline" href="#about">ABOUT</a>
+          </li>
+          <li>
+            <a class="hover:text-red-600 active:underline" href="#skills">SKILL</a>
+          </li>
+          <li>
+            <a class="hover:text-red-600 active:underline" href="#projects">PROJECT</a>
+          </li>
+          <li>
+            <a class="hover:text-red-600 active:underline" href="#contact">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+
+
+
+
+
+      <!-- ==================================================================================== -->
+      <div class="md:hidden p-6">
+        <button onclick="toggleMenu()">
+          <img src="menu.png" class="h-[30px]0 w-[50px]">
+        </button>
+      </div>
+    </header>
+
+    <!-- ================================================================================================ -->
+
+    <div id = "menu" class="md:hidden hidden flex flex-col fixed top-20 z-50">
+      <a href="#" >Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contsct</a>
+
+    </div>
+
+
+
+
+
+
+    <!-- --------------------------------Home Page-------------------------------------------->
+     <main class="mt-[50px]">
+
+      <section id="home" class=" w-[full] min-h-screen flex flex-wrap gap-4 justify-center items-center z-0 pt-16">
+        
+              <!-- <div class="w-[50%] bg-red-500 h-[500px] flex flex-col justify-between items-center">
+                <h1 class="text-6xl font-medium leading-relaxed ">I'm Navya,<br>a Web Devoloper </h1>
+                <p class="leading-snug text-gray-200  ">a passionate front-end developer with a keen interest in building interactive and responsive web applications. 
+                </p>
+              </div>
+              <div class="w-[50%] bg-red-500 h-[600px] relative z-0">
+                <img src="_G9A2987.JPG " class="h-[500px] absolute left-40">
+              </div> -->
+
+              <div class="w-[full] h-auto md:h-[500px] bg-red-500 flex flex-col justify-center items-center p-4">
+                  <h1 class="text-4xl sm:text-5xl md:text-6xl sm:p-8 font-medium leading-relaxed text-center ">I'm Navya,<br>a Web Devoloper </h1>
+                  <p class="leading-snug text-gray-200 w-[full] md:w-[600px] text-center"> A passionate front-end developer with a keen interest in building interactive and responsive web applications. 
+                  </p>
+              </div>
+
+              <div class="w-[full] md:w-[600px] h-auto md:h-[500px] bg-red-500 relative flex justify-center items-center p-4">
+                <img src="_G9A2987.JPG " class="h-[500px] md:h-[400px] w-auto">
+
+              </div>
+      </section>
+
+      <!-- --------------------------------About Page------------------------------------------ -->
+
+      <section id ="about" class= " min-h-screen w-[full] bg-green-300 flex items-center p-4 ">
+      <div class="w-[full] bg-amber-50 p-6 rounded-lg">
+        <h1 class="text-5xl font-medium leading-relaxed text-black text-center mb-8">About Me</h1>
+
+        <div class="w-[full] h-[auto] bg-red-500 flex flex-col md:flex-row items-center gap-8 justify-around p-4 rounded-lg">
+            <div class="w-[full] md:w-[400px] bg-yellow-300 flex items-center justify-center rounded-md" >
+              <img src="_G9A2983.JPG" alt="profile-pic" class="w-full h-auto max-w-[400px] rounded-lg">
+            </div>
+
+            <div class="w-[full] md:w-1/2 bg-slate-400 p-4 rounded-lg">
+              <h1 class="text-3xl mb-4">Get to know me!</h1>
+              <p class=" leading-loose text-center md:text-left mb-6">Hello World!, I'm Navya S and I'm a Web Devoloper located in Kerala, India. And also
+                I am a passionate web developer with a strong foundation in HTML, CSS, JavaScript, and Tailwind CSS. My expertise lies in crafting clean, responsive, and visually appealing websites that provide a seamless user experience. I enjoy turning ideas into reality by creating intuitive and accessible web designs, and I am constantly expanding my skills to stay updated with the latest trends and technologies in the web development world.
+              </p>
+              <p class="text-2xl font-[pacifico] text-center md:text-left "  >"An ordinary individual with desire of doing something extra ordinary"</p>
+            </div>
+        </div>
+
+      </div>
+
+      </section>
+
+      <!-- --------------------------------Skill Page------------------------------------------ -->
+
+      <section id ="skills" class="bg-amber-200 min-h-screen w-[100%] flex items-center">
+        <div class="w-[100%] bg-orange-50 h-[600px] ">
+          <h1 class="text-5xl font-medium leading-relaxed text-black text-center" >Skills</h1>
+          <div class=" bg-gray-500 h-[500px] w-[100%] grid grid-cols-1 md:grid-cols-2 grid-rows-4 gap-4">
+           
+            <div class="  flex items-center">
+              <div class="w-[60px]">
+                <img src="html (1).png" class="w-[50px] h-[50px]">
+              </div>
+
+              <div class=" w-[100%] h-[100%]"k>
+                  <div class="flex justify-between items-end h-[50%] w-[98%]">
+                    <p>HTML</p>
+                    <p>98%</p>
+                  </div>
+
+                  <div class="h-[50%]  ">
+                    <div class="w-[100%] h-10px bg-white">
+                      <div class="w-[95%] h-[10px] bg-orange-200">
+                      </div>
+                      
+                    </div>                    
+                  </div>
+              </div>
+            </div>
+
+            <div class=" flex items-center">
+              <div class="w-[60px]">
+                <img src="css-3.png" class="w-[50px] h-[50px]">
+              </div>
+              <div class=" w-[100%] h-[100%]">
+                <div class="flex justify-between items-end h-[50%]  w-[90%]">
+                  <p>CSS</p>
+                  <p>90%</p>
+                </div>
+
+                <div class="h-[50%] ">
+                  <div class="w-[100%] h-10px bg-white">
+                    <div class="w-[90%] h-[10px] bg-orange-200">
+                    </div>
+                    
+                  </div>                  
+                </div>
+            </div>
+          </div>
+
+            <div class=" flex items-center">
+              <div class="w-[60px]">
+                <img src="js.png" class="w-[50px] h-[50px]">
+              </div>
+              <div class=" w-[100%] h-[100%]">
+
+                <div class="flex justify-between items-end h-[50%]  w-[90%]">
+                  <p>CSS</p>
+                  <p>90%</p>
+                </div>
+                <div class="h-[50%]  ">
+                  <div class="w-[100%] h-10px bg-white">
+                    <div class="w-[90%] h-[10px] bg-orange-200">
+                    </div>
+                    
+                  </div>                 
+                </div>
+              </div> 
+            </div>
+
+            <div class=" flex items-center">
+              <div class="w-[60px]">
+                <i class='bx bxl-tailwind-css text-teal-500 text-6xl'></i>
+              </div>
+              <div class=" w-[100%] h-[100%]">
+
+                <div class="flex justify-between items-end h-[50%]  w-[70%]">
+                  <p>Tailwind</p>
+                  <p>70%</p>
+                </div>
+                <div class="h-[50%]  ">
+                  <div class="w-[100%] h-10px bg-white">
+                    <div class="w-[70%] h-[10px] bg-orange-200">
+                    </div>
+                    
+                  </div>                 
+                </div>
+              </div>
+            </div>
+
+            <div class=" flex items-center ">
+              <div class="w-[60px]">
+                <img src="letter-c.png" class="w-[50px] h-[50px]">
+              </div>
+              <div class=" w-[100%] h-[100%]">
+
+                <div class="flex justify-between items-end h-[50%]  w-[70%]">
+                  <p>C</p>
+                  <p>70%</p>
+                </div>
+                <div class="h-[50%]  ">
+                  <div class="w-[100%] h-10px bg-white">
+                    <div class="w-[70%] h-[10px] bg-orange-200">
+                    </div>
+                    
+                  </div>                 
+                </div>
+              </div>
+                             
+            </div>
+            <!-- <div class="bg-indigo-700">6</div>
+            <div class="bg-fuchsia-900" >7</div>
+            <div class="bg-fuchsia-900" >7</div> -->
+
+          </div>
+        </div>
+          </section>
+<!-- --------------------------------Project page ----------------------------------------------- -->
+      <section id ="projects" class=" min-h-screen bg-teal-600 w-[full] flex items-center">
+        <div class="w-[full] h-[auto] bg-red-400 p-4">
+          <h1 class="text-5xl font-medium leading-relaxed text-black text-center mb-8" >Projects</h1>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-center ">
+            <div class="flex justify-center">
+            <img src="e-voting.png" class="w-[full] md:w-[500px] h-auto max-w-full">
+            </div>
+          
+            <div class="p-4 rounded-lg bg-slate-500"> 
+              <h1 class="text-2xl font-semibold mb-4">E-voting System using Blockchain</h1>
+              <p class="text-base">
+                This project is an electronic voting system that a person can cast his vote from anywhere in the world. By using this application a person can cast his vote with privacy and security. Here we using a technology called Blockchain. By using blockchain the value stored inside the blockchain cannot be alterd or deleted. So this is highly focusing on security and Authonticity.
+              </p>
+            </div>
+        </div>
+      </div>
+      </section>
+
+      <!-- ---------------------------------------------Contact----------------------------------------------- -->
+
+      <section id ="contact" class=" min-h-screen bg-sky-500 w-[100%] flex justify-center items-center">
+        <div class="bg-white p-8 rounded-lg shadow-lg w-full max-w-md m-6">
+          <h2 class="text-3xl font-semibold text-center text-gray-800 mb-8">Contact Me</h2>
+          <form action="#" method="POST" class="space-y-6">
+            
+            <div>
+              <label for="name" class="block text-gray-700 font-medium mb-2">Name</label>
+              <input type="text" id="name" name="name" class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500 text-black" placeholder="Your Name" required>
+            </div>
+      
+           
+            <div>
+              <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>
+              <input type="email" id="email" name="email" class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500 text-black" placeholder="Your Email" required>
+            </div>
+      
+            
+            <div>
+              <label for="message" class="block text-gray-700 font-medium mb-2">Message</label>
+              <textarea id="message" name="message" rows="5" class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500 text-black" placeholder="Your Message" required></textarea>
+            </div>
+      
+           
+            <div>
+              <button type="button" class="w-full bg-teal-500 text-white p-3 rounded-md hover:bg-teal-600 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-opacity-50" onclick="sendMail()">
+                Send Message
+              </button>
+            </div>
+          </form>
+        </div>
+        
+
+
+      </section>
+
+
+
+
+    </main>
+
+  
+  </div>
+
+</body>
+
+</html>
